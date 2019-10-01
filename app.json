@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "sdkVersion": "35.0.0",
+    "splash": {
+      "image": "./app/src/logo/splash.png",
+      "backgroundColor": "#007AFF",
+      "resizeMode": "contain"
+    },
+    "name": "Currency Converter",
+    "slug": "currency-converter",
+    "version": "0.1.0",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "description": ""
+  }
+}

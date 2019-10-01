@@ -1,0 +1,51 @@
+{
+  "name": "CurrencyConverter-Starter",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "prettier": "^1.5.3",
+    "prettier-eslint": "^8.2.2",
+    "react-native-scripts": "1.14.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.0",
+    "@wwdrew/react-native-numeric-textinput": "^1.1.0",
+    "color": "^3.0.0",
+    "expo": "^35.0.0",
+    "expo-cli": "^3.0.10",
+    "hoist-non-react-statics": "^3.0.1",
+    "humanize-plus": "^1.8.2",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "react": "16.8.3",
+    "react-currency-format": "^1.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-dropdownalert": "^3.1.2",
+    "react-native-elements": "^1.2.3",
+    "react-native-extended-stylesheet": "^0.8.0",
+    "react-native-paper": "^2.16.0",
+    "react-native-search-filter": "^0.1.5",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^2.5.5",
+    "react-redux": "^5.0.4",
+    "react-search-input": "^0.11.3",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.1",
+    "redux-saga": "^0.16.0",
+    "rnpm": "^1.9.0"
+  }
+}
