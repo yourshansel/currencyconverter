@@ -40,6 +40,9 @@ const setConversions = (state, action) => {
   };
 };
 
+
+
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_CURRENCY_AMOUNT:
@@ -93,3 +96,34 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+
+export function changeCurrencyAmount(state = initialState, action) {
+  switch (action.type) {
+    case CHANGE_CURRENCY_AMOUNT:
+      return { ...state, amount: action.amount || 0 };
+      default:
+      return state;
+  }
+  
+}
+
+
+export function swapCurrency(state = initialState, action) {
+  switch (action.type) {
+    case SWAP_CURRENCY:
+      return {
+        ...state,
+        baseCurrency: state.quoteCurrency,
+        baseCurrencyName: state.quoteCurrencyName,
+        baseCurrencyFlag: state.quoteCurrencyFlag,
+        baseCurrencyPrefix: state.quoteCurrencyPrefix,
+        quoteCurrency: state.baseCurrency,
+        quoteCurrencyName: state.baseCurrencyName,
+        quoteCurrencyFlag: state.baseCurrencyFlag,
+        quoteCurrencyPrefix: state.baseCurrencyPrefix,
+      };
+      default:
+      return state;
+  }
+}

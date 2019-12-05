@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 
 import Navigator from './config/routes';
 import { AlertProvider } from './components/Alert';
-import store from './config/store';
+import Store from './config/store';
+import { PersistGate } from 'redux-persist/integration/react'
 
 EStyleSheet.build({
   $primaryBlue: '#007AFF',
@@ -17,9 +18,12 @@ EStyleSheet.build({
 });
 
 export default () => (
-  <Provider store={store}>
+  <Provider store={Store.store}>
+    <PersistGate loading={null} persistor={Store.persistor}>
     <AlertProvider>
       <Navigator onNavigationStateChange={null} />
+
     </AlertProvider>
+    </PersistGate>
   </Provider>
 );

@@ -6,13 +6,24 @@
       "backgroundColor": "#007AFF",
       "resizeMode": "contain"
     },
-    "name": "Currency Converter",
-    "slug": "currency-converter",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "name": "Chameleon",
+    "slug": "chameleon",
+    "description": "A simple currency converter app!",
+    "icon": "./app/src/logo/logo.png",
     "version": "0.1.0",
+    "ios": {
+      "bundleIdentifier": "com.yourshansel.chameleon"
+    },
+    "android": {
+      "package": "com.yourshansel.chameleon"
+    },
     "platforms": [
       "android",
       "ios"
     ],
-    "description": ""
+    "scheme": "exp97c0305152a24d268818b075c3526e78"
   }
 }
